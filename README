@@ -1,0 +1,36 @@
+Simple Grid
+
+Simple Grid is a jQuery plugin intended to be a no-fuss way to "replicate" your Photoshop grid on top of your development site.
+
+Set these 3 variables to get started:
+
+rowHeight
+This is your line-height (most of the time)
+
+columnWidth
+This is your column width - it's BEST to use a number that divides the gridWidth evenly!!
+
+gridWidth
+This is the width of the area being gridded
+
+Example
+
+$.simpleGrid({
+  rowHeight: 20,
+  columnWidth: 30,
+  gridWidth: 960
+});
+
+WHAT YOU GET
+
+Once you've added the tiny bit of JavaScript to your page, you will get a pink dot in the upper left corner.
+
+Clicking the pink dot will toggle the grid on and off.
+
+Try it!
+
+CREDITS
+
+A GIANT thank you goes to Patrick Bacon for his coaching and coding input.
+
+Dustin Tinney has been a solid source of inspiration and ideas along the way as well! Major thanks!
