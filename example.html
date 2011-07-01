@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Simple Grid</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="simple-grid.js"></script>
+    <script type="text/javascript">
+      $.simpleGrid({
+        rowHeight: 20, // This is your line-height (most of the time)
+        columnWidth: 30, // This is your column width - it's BEST to use a number that divides the gridWidth evenly!!
+        gridWidth: 960 // This is the width of the area being gridded - In the example below, it's the same width as #container
+      });
+    </script>
+    
+    <style type="text/css" media="screen">
+      *{margin:0; padding:0; font-family:arial, sans-serif; font-size:12px;}
+      body{}
+      ol{margin:0 0 0 30px;}
+      pre{font-family:monospace; margin-left:30px;}
+      p, ol, h1, h2, h3, pre{margin-bottom:20px;}
+      h1{font-size:20px;}
+      h2{text-transform:uppercase; font-size:14px;}
+      #container{width:960px; margin:0 auto; line-height:20px;}
+      .item{width:300px; margin:0 30px 0 0; padding:20px 0 0 0; float:left; background:#f1f3f4;}
+      .alt{background:#fff;}
+      .loud{font-weight:bold;}
+      .quiet{font-style:italic; color:#666;}
+      .snug{margin-bottom:0;}
+      .pink{color:#e073c0; font-weight:bold;}
+      .last{margin:0;}
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="item">
+        <h1>Simple Grid</h1>
+        <p class="loud">
+          Simple Grid is a <a href="http://jquery.com/" title="jQuery: The Write Less, Do More, JavaScript Library">jQuery</a> plugin intended to be a no-fuss way to "replicate" your Photoshop grid on top of your development site.
+        </p>
+        <p class="snug">
+          <strong>Set these 3 variables to get started:</strong>
+        </p>
+        <ol>
+          <li><strong>rowHeight</strong><br />
+            <span class="quiet">This is your line-height (most of the time)</span>
+          </li>
+          <li><strong>columnWidth</strong><br />
+            <span class="quiet">This is your column width - it's BEST to use a number that divides the gridWidth evenly!!</span>
+          </li>
+          <li><strong>gridWidth</strong><br />
+            <span class="quiet">This is the width of the area being gridded</span>
+          </li>
+        </ol>
+        <h3>Example</h3>
+        <pre>
+$.simpleGrid({
+  rowHeight: 20,
+  columnWidth: 30,
+  gridWidth: 960
+});</pre>
+      </div>
+      <div class="item alt">
+        <h2>What You Get</h2>
+        <p>
+          Once you've added the tiny bit of JavaScript to your page, you will get a <span class="pink">pink dot</span> in the upper left corner.
+        </p>
+        <p>
+          Clicking the <span class="pink">pink dot</span> will toggle the grid on and off.
+        </p>
+        <p>
+          <strong>Try it!</strong>
+        </p>
+      </div>
+      <div class="item last">
+        <h2>Credits</h2>
+        <p>A <strong>GIANT thank you</strong> goes to <a href="http://www.atomicobject.com/pages/Patrick+Bacon" title="Patrick Bacon | atomicobject.com">Patrick Bacon
+        </a> for his coaching and coding input.</p>
+        <p><a href="http://www.atomicobject.com/pages/Dustin+Tinney" title="Dustin Tinney | atomicobject.com">Dustin Tinney</a> has been a solid source of inspiration and ideas along the way as well! <strong>Major thanks!</strong></p>
+      </div>
+    </div>
+  </body>
+</html>
