@@ -12,7 +12,7 @@
       
       $("#jquery-simple-grid-view").toggle(
         function () {
-          var documentHeight = $(document).height() - 5;
+          var documentHeight = $(document).height() - Math.round(hgrid / 2);
           var gridHeight = hgrid - 1;
           var gridWidth = vgrid - 1;
           var vgrids = griddedWidth / vgrid;
